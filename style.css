@@ -133,7 +133,7 @@ footer {
 
 .subproducts {
     width: 285px;
-    height: 340px;
+    height: 315px;
     background-color: #2c71b8;
     margin-left: -1px;
 
@@ -179,5 +179,19 @@ li:hover ul {
 .products:hover>a {
     background-color: #2c71b8;
     color: #ffffff;
+
+}
+
+.basket {
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+    margin-right: -75px;
+    margin-top: -5px;
+
+}
+
+.subproducts>li {
+    height: 45px;
 
 }
