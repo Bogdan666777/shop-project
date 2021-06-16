@@ -286,6 +286,7 @@ main::after {
     background-color: saddlebrown;
     margin-left: 285px;
     margin-top: -675px;
+    float: left;
 }
 
 .block1 {
@@ -294,6 +295,7 @@ main::after {
     border: 1px solid white;
     margin-left: -15px;
     background-color: rgba(45, 113, 184, 0.75);
+    float: left;
 }
 
 .foto1 {
@@ -390,4 +392,196 @@ span {
 
 .basketwhite {
     margin-left: 10px;
+}
+
+.block2 {
+    width: 270px;
+    height: 650px;
+    border: 1px solid white;
+    margin-left: -15px;
+    background-color: rgba(45, 113, 184, 0.75);
+    float: left;
+    margin-left: 30px;
+}
+
+.foto2 {
+    width: 270px;
+    height: 180px;
+    border-bottom: 1px solid white;
+    background-color: rgba(202, 219, 237);
+    text-align: center;
+}
+
+.dvd {
+    margin-top: 45px;
+}
+
+.count2 {
+    font-size: 24px;
+    position: absolute;
+    margin-left: 220px;
+    margin-top: -50px;
+}
+
+.block3 {
+    width: 270px;
+    height: 650px;
+    border: 1px solid white;
+    margin-left: -15px;
+    background-color: rgba(45, 113, 184, 0.75);
+    float: left;
+    margin-left: 30px;
+}
+
+.foto3 {
+    width: 270px;
+    height: 180px;
+    border-bottom: 1px solid white;
+    background-color: rgba(202, 219, 237);
+    text-align: center;
+}
+
+.clock {
+    margin-top: 45px;
+}
+
+.block4 {
+    width: 270px;
+    height: 650px;
+    border: 1px solid white;
+    margin-left: -15px;
+    background-color: rgba(45, 113, 184, 0.75);
+    float: left;
+    margin-top: 30px;
+}
+
+.foto4 {
+    width: 270px;
+    height: 180px;
+    border-bottom: 1px solid white;
+    background-color: rgba(202, 219, 237);
+    text-align: center;
+}
+
+.notebook {
+    margin-top: 45px;
+}
+
+.block5 {
+    width: 270px;
+    height: 650px;
+    border: 1px solid white;
+    margin-left: -15px;
+    background-color: rgba(45, 113, 184, 0.75);
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.foto5 {
+    width: 270px;
+    height: 180px;
+    border-bottom: 1px solid white;
+    background-color: rgba(202, 219, 237);
+    text-align: center;
+}
+
+.player {
+    margin-top: 45px;
+}
+
+.count2 {
+    font-size: 24px;
+    position: absolute;
+    margin-left: 220px;
+    margin-top: -50px;
+}
+
+.block6 {
+    width: 270px;
+    height: 650px;
+    border: 1px solid white;
+    margin-left: -15px;
+    background-color: rgba(45, 113, 184, 0.75);
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.foto6 {
+    width: 270px;
+    height: 180px;
+    border-bottom: 1px solid white;
+    background-color: rgba(202, 219, 237);
+    text-align: center;
+}
+
+.telephone {
+    margin-top: 45px;
+}
+
+.block7 {
+    width: 270px;
+    height: 650px;
+    border: 1px solid white;
+    margin-left: -15px;
+    background-color: rgba(45, 113, 184, 0.75);
+    float: left;
+    margin-top: 30px;
+
+
+}
+
+.foto7 {
+    width: 270px;
+    height: 180px;
+    border-bottom: 1px solid white;
+    background-color: rgba(202, 219, 237);
+    text-align: center;
+}
+
+.leptop {
+    margin-top: 45px;
+}
+
+.block8 {
+    width: 270px;
+    height: 650px;
+    border: 1px solid white;
+    margin-left: -15px;
+    background-color: rgba(45, 113, 184, 0.75);
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+
+
+}
+
+.foto8 {
+    width: 270px;
+    height: 180px;
+    border-bottom: 1px solid white;
+    background-color: rgba(202, 219, 237);
+    text-align: center;
+}
+
+.block9 {
+    width: 270px;
+    height: 650px;
+    border: 1px solid white;
+    margin-left: -15px;
+    background-color: rgba(45, 113, 184, 0.75);
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+
+
+}
+
+.foto9 {
+    width: 270px;
+    height: 180px;
+    border-bottom: 1px solid white;
+    background-color: rgba(202, 219, 237);
+    text-align: center;
 }
