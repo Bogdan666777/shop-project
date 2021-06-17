@@ -286,7 +286,7 @@ main::after {
     background-color: saddlebrown;
     margin-left: 285px;
     margin-top: -675px;
-    float: left;
+    
 }
 
 .block1 {
@@ -308,6 +308,7 @@ main::after {
 
 .komp {
     margin-top: 45px;
+    margin-left: 25px;
 }
 
 h1 {
@@ -414,6 +415,7 @@ span {
 
 .dvd {
     margin-top: 45px;
+    margin-left: 25px;
 }
 
 .count2 {
@@ -443,6 +445,7 @@ span {
 
 .clock {
     margin-top: 45px;
+    margin-left: 25px;
 }
 
 .block4 {
@@ -464,7 +467,8 @@ span {
 }
 
 .notebook {
-    margin-top: 45px;
+    margin-top: 60px;
+    margin-left: 35px;
 }
 
 .block5 {
@@ -488,6 +492,7 @@ span {
 
 .player {
     margin-top: 45px;
+    margin-left: 25px;
 }
 
 .count2 {
@@ -518,6 +523,7 @@ span {
 
 .telephone {
     margin-top: 45px;
+    margin-left: 25px;
 }
 
 .block7 {
@@ -542,6 +548,7 @@ span {
 
 .leptop {
     margin-top: 45px;
+    margin-left: 25px;
 }
 
 .block8 {
@@ -584,4 +591,25 @@ span {
     border-bottom: 1px solid white;
     background-color: rgba(202, 219, 237);
     text-align: center;
+}
+
+.ramka{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #2c71b8;
+    float: right;
+    padding: 4px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.like{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #2c71b8;
+    float: right;
+    padding: 4px;
+    margin-top: 50px;
+    margin-right: -30px;
+    padding: 5px;
 }
