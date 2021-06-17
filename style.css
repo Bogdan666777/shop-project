@@ -257,7 +257,7 @@ main::after {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: red;
+    
 
 
 
@@ -283,7 +283,6 @@ main::after {
 
     width: 900px;
     height: 2080px;
-    background-color: saddlebrown;
     margin-left: 285px;
     margin-top: -675px;
     
