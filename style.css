@@ -477,7 +477,7 @@ span{
 }
 
 .zoom:hover{
-    
+    background-image: url(images/whitezoom.png);
     background-color: #2c71b8;
     
     
@@ -485,6 +485,7 @@ span{
 
 .like:hover{
     background-color: #2c71b8;
+    background-image: url(images/whitelike.png);
 }
 
 
