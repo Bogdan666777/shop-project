@@ -92,7 +92,8 @@ form {
 
 }
 
-.input-checkbox, .search {
+.input-checkbox,
+.search {
     width: 200px;
     height: 40px;
     background: transparent;
@@ -232,11 +233,11 @@ main::after {
 
 
 
-.slider {
-
-    height: 400px;
-    background-color: #235a93;
-    border-bottom: 1px solid white;
+.slider-block > div{
+   padding: 150px 0;
+   text-align: center;
+   color: white;
+   font-size: 40px;
 }
 
 .col-md-9 {
@@ -252,16 +253,16 @@ main::after {
     width: 66.7%;
 }
 
-.col-md-5{
+.col-md-5 {
     width: 33.3%;
 }
 
 .col-md-4 {
     width: 33.3%;
     margin-left: 0px;
-    
-    
-    
+
+
+
 }
 
 .filter {
@@ -304,28 +305,28 @@ main::after {
 }
 
 .product {
-    
+
     width: 270px;
     height: 665px;
     border: 1px solid white;
     background-color: rgba(44, 112, 183, 0.75);
     margin-top: 30px;
-    
-    
+
+
 
 }
 
-.product-image{
+.product-image {
     width: 100%;
     height: 180px;
     position: relative;
     border-bottom: 1px solid white;
     background-color: rgba(202, 219, 237, 0.75);
     text-align: center;
-    line-height: 60px;   
+    line-height: 60px;
 }
 
-.product-image > img{
+.product-image>img {
     position: absolute;
     margin: auto;
     left: 0;
@@ -334,7 +335,7 @@ main::after {
     right: 0;
 }
 
-.zoom{
+.zoom {
     width: 30px;
     height: 30px;
     border: 1px solid #2c71b8;
@@ -343,10 +344,10 @@ main::after {
     margin-top: 10px;
     margin-right: 10px;
     position: relative;
-    
+
 }
 
-.zoom > .img-zoom{
+.zoom>.img-zoom {
     position: absolute;
     margin: auto;
     left: 0;
@@ -357,7 +358,7 @@ main::after {
 
 
 
-.like{
+.like {
     position: relative;
     width: 30px;
     height: 30px;
@@ -369,7 +370,7 @@ main::after {
     padding: 5px;
 }
 
-.like > .img-like{
+.like>.img-like {
     position: absolute;
     margin: auto;
     left: 0;
@@ -377,7 +378,8 @@ main::after {
     bottom: 0;
     right: 0;
 }
-.product-title{
+
+.product-title {
     margin-top: 15px;
     font-size: 30px;
     color: white;
@@ -385,20 +387,20 @@ main::after {
     font-weight: bold;
 }
 
-.product-description{
+.product-description {
     font-size: 21px;
     margin-left: 15px;
     color: white;
     margin-top: 15px;
 }
 
-span{
+span {
     text-transform: uppercase;
     font-weight: Bold;
-    
+
 }
 
-.product-features{
+.product-features {
     color: white;
     font-size: 21px;
     margin-left: 15px;
@@ -406,35 +408,35 @@ span{
 
 }
 
-.product-features > p{
+.product-features>p {
     margin-top: 20px;
 }
 
-.product-price{
+.product-price {
     color: white;
     font-size: 48px;
     margin-top: 25px;
     text-align: center;
     font-weight: bold;
-    
+
 }
 
-.product-cart2{
+.product-cart2 {
     font-size: 24px;
     position: absolute;
     margin-left: 195px;
     margin-top: -50px;
-    
+
 }
 
-.product-cart3{
+.product-cart3 {
     font-size: 24px;
     position: absolute;
     margin-left: 210px;
     margin-top: -50px;
 }
 
-.btn{
+.btn {
     width: 210px;
     height: 50px;
     border: 1px solid white;
@@ -443,7 +445,7 @@ span{
     margin-top: 20px;
 }
 
-.btn  .btn-more-details{
+.btn .btn-more-details {
     width: 208px;
     height: 48px;
     font-size: 21px;
@@ -453,7 +455,7 @@ span{
 
 }
 
-.btn1{
+.btn1 {
     width: 210px;
     height: 50px;
     border: 1px solid white;
@@ -462,7 +464,7 @@ span{
     margin-top: 85px;
 }
 
-.btn1  .btn-add-to-cart{
+.btn1 .btn-add-to-cart {
     width: 208px;
     height: 48px;
     font-size: 21px;
@@ -473,32 +475,33 @@ span{
 
 }
 
-.img1{
+.img1 {
     margin-left: 15px;
 }
 
-.zoom:hover{
+.zoom:hover {
     background-image: url(images/whitezoom.png);
     background-color: #2c71b8;
-    
-    
+
+
 }
 
-.like:hover{
+.like:hover, .liked {
     background-color: #2c71b8;
-    background-image: url(images/whitelike.png);
+    background-image:url(images/whitelike.png);
+    
 }
 
-.btn-more-details:hover{
+.btn-more-details:hover {
     background-color: rgba(86, 141, 198, 0.75);
 }
 
-.btn-add-to-cart:hover{
+.btn-add-to-cart:hover {
     background-color: rgba(86, 141, 198, 0.75);
 
 }
 
-.device-type > p{
+.device-type>p {
     font-size: 21px;
     font-weight: bold;
     color: white;
@@ -506,10 +509,10 @@ span{
     width: 100%;
     text-transform: uppercase;
     line-height: 50px;
-   
+
 }
 
-label::before{
+label::before {
     margin-left: 30px;
     content: "";
     display: block;
@@ -517,21 +520,21 @@ label::before{
     height: 10px;
     border: 1px solid white;
     float: left;
-    
-    
+
+
 }
 
-input[type="checkbox"]:checked+label::before{
+input[type="checkbox"]:checked+label::before {
     background-color: white;
-    
+
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     display: none;
-    
+
 }
 
-label > p{
+label>p {
     margin-left: 52px;
     margin-top: -5px;
     color: white;
@@ -539,7 +542,7 @@ label > p{
     margin-bottom: 25px;
 }
 
-.color > p{
+.color>p {
     font-size: 21px;
     font-weight: bold;
     color: white;
@@ -548,10 +551,10 @@ label > p{
     text-transform: uppercase;
     margin-top: 55px;
     margin-bottom: 25px;
-    
+
 }
 
-.ram > p{
+.ram>p {
     font-size: 21px;
     font-weight: bold;
     color: white;
@@ -559,19 +562,19 @@ label > p{
     width: 100%;
     text-transform: uppercase;
     margin-top: 55px;
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
 }
 
-.show-more-options > p{
+.show-more-options>p {
     font-size: 21px;
     color: white;
     margin-left: 30px;
     width: 100%;
     margin-top: 25px;
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
 }
 
-.submit-filter{
+.submit-filter {
     width: 210px;
     height: 50px;
     background-color: rgb(45, 113, 184);
@@ -583,11 +586,11 @@ label > p{
     margin-top: 745px;
 }
 
-.submit-filter:hover{
+.submit-filter:hover {
     background-color: rgba(86, 141, 198, 0.75);
 }
 
-.modal{
+.modal {
     width: 100%;
     height: 100%;
     top: 0;
@@ -595,11 +598,11 @@ label > p{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.3);
     display: none;
-    
-    
+
+
 }
 
-.modal-block{
+.modal-block {
     width: 300px;
     height: 200px;
     margin: 80px auto;
@@ -608,20 +611,20 @@ label > p{
     background-color: white;
 }
 
-.form-field{
+.form-field {
     margin: 10px 0;
 }
 
-.btn-close{
+.btn-close {
     text-align: right;
     cursor: pointer;
-    
+
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.show{
+.show {
     display: block;
 }
