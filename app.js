@@ -61,27 +61,69 @@ $(".slider-block").slick({
     dots:true,
 });
 //change product quantify
+
+
+
+// console.log(decrementBtns);
+// console.log(incrementBtns);
+// console.log(quantityInputs.value);
+
+
+// incrementBtns.addEventListener("click", function () {
+//     let currentCount = +quantityInputs.value;
+//     let nextCount = currentCount + 1;
+//     quantityInputs.value = nextCount;
+//     toggleButtonsState(nextCount);
+//   });
+//   decrementBtns.addEventListener("click", function () {
+//     let currentCount = +quantityInputs.value;
+//     let nextCount = currentCount - 1;
+//     quantityInputs.value = nextCount;
+//     toggleButtonsState(nextCount);
+//   });
+
+ 
+
+//   let currentCount = +quantityInputs.value;
+
+//   toggleButtonsState(currentCount);
+
 let decrementBtns = document.querySelectorAll(".decrement-button")[0];
 let incrementBtns = document.querySelectorAll(".increment-button")[0];
 let quantityInputs = document.querySelectorAll(".products-quantity input")[0];
 
-console.log(decrementBtns);
-console.log(incrementBtns);
-console.log(quantityInputs.value);
+function Counter(incrementBtn, decrementBtn, inputField){
+    this.domRefs = {
+        incrementBtn,
+        decrementBtn,
+        inputField
+    };
+    this.toggleButtonsState = function () {
+        let count = this.domRefs.inputField.value;
+        this.domRefs.decrementBtn.disabled = count <= 1;
+        this.domRefs.incrementBtn.disabled = count >= 5;
+      };
+    
+      this.toggleButtonsState();
 
-function toggleButtonsState(count) {
-  decrementBtns.disabled = count <= 1;
-  incrementBtns.disabled = count >= 5;
+      this.increment = function () {
+        let currentCount = +this.domRefs.inputField.value;
+        let nextCount = currentCount + 1;
+        this.domRefs.inputField.value = nextCount;
+        this.toggleButtonsState(nextCount);
+      };
+
+      this.decrement = function () {
+        let currentCount = +this.domRefs.inputField.value;
+        let nextCount = currentCount - 1;
+        this.domRefs.inputField.value = nextCount;
+        this.toggleButtonsState(nextCount);
+      };
+
+      this.domRefs.incrementBtn.addEventListener("click", this.increment);
+      this.domRefs.incrementBtn.addEventListener("click", this.decrement);
 }
-incrementBtns.addEventListener("click", function () {
-    let currentCount = +quantityInputs.value;
-    let nextCount = currentCount + 1;
-    quantityInputs.value = nextCount;
-    toggleButtonsState(nextCount);
-  });
-  decrementBtns.addEventListener("click", function () {
-    let currentCount = +quantityInputs.value;
-    let nextCount = currentCount - 1;
-    quantityInputs.value = nextCount;
-    toggleButtonsState(nextCount);
-  });
+
+let counter = new Counter(incrementBtns, decrementBtns, quantityInputs);
+console.log(counter);
+
