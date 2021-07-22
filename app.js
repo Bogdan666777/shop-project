@@ -58,7 +58,7 @@ likeBtns.forEach((item) =>
 
 //slick slider
 $(".slider-block").slick({
-    dots:true,
+    dots: true,
 });
 //change product quantify
 
@@ -82,7 +82,7 @@ $(".slider-block").slick({
 //     toggleButtonsState(nextCount);
 //   });
 
- 
+
 
 //   let currentCount = +quantityInputs.value;
 
@@ -92,7 +92,7 @@ let decrementBtns = document.querySelectorAll(".decrement-button")[0];
 let incrementBtns = document.querySelectorAll(".increment-button")[0];
 let quantityInputs = document.querySelectorAll(".products-quantity input")[0];
 
-function Counter(incrementBtn, decrementBtn, inputField){
+function Counter(incrementBtn, decrementBtn, inputField) {
     this.domRefs = {
         incrementBtn,
         decrementBtn,
@@ -102,27 +102,29 @@ function Counter(incrementBtn, decrementBtn, inputField){
         let count = this.domRefs.inputField.value;
         this.domRefs.decrementBtn.disabled = count <= 1;
         this.domRefs.incrementBtn.disabled = count >= 5;
-      };
-    
-      this.toggleButtonsState();
+    };
 
-      this.increment = function () {
+    this.toggleButtonsState();
+
+    this.increment = function () {
         let currentCount = +this.domRefs.inputField.value;
         let nextCount = currentCount + 1;
         this.domRefs.inputField.value = nextCount;
         this.toggleButtonsState(nextCount);
-      };
+    };
 
-      this.decrement = function () {
+    this.decrement = function () {
         let currentCount = +this.domRefs.inputField.value;
         let nextCount = currentCount - 1;
         this.domRefs.inputField.value = nextCount;
         this.toggleButtonsState(nextCount);
-      };
+    };
 
-      this.domRefs.incrementBtn.addEventListener("click", this.increment);
-      this.domRefs.incrementBtn.addEventListener("click", this.decrement);
+    this.domRefs.incrementBtn.addEventListener("click", this.increment.bind(this));
+
+    this.domRefs.decrementBtn.addEventListener("click", this.decrement.bind(this));
 }
+
 
 let counter = new Counter(incrementBtns, decrementBtns, quantityInputs);
 console.log(counter);
