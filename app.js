@@ -88,9 +88,9 @@ $(".slider-block").slick({
 
 //   toggleButtonsState(currentCount);
 
-let decrementBtns = document.querySelectorAll(".decrement-button")[0];
-let incrementBtns = document.querySelectorAll(".increment-button")[0];
-let quantityInputs = document.querySelectorAll(".products-quantity input")[0];
+let decrementBtns = document.querySelectorAll(".decrement-button");
+let incrementBtns = document.querySelectorAll(".increment-button");
+let quantityInputs = document.querySelectorAll(".products-quantity input");
 
 function Counter(incrementBtn, decrementBtn, inputField) {
     this.domRefs = {
@@ -125,7 +125,12 @@ function Counter(incrementBtn, decrementBtn, inputField) {
     this.domRefs.decrementBtn.addEventListener("click", this.decrement.bind(this));
 }
 
+quantityInputs.forEach((quantity, i) => {
+    new Counter(incrementBtns[i], decrementBtns[i], quantity);
+});
 
-let counter = new Counter(incrementBtns, decrementBtns, quantityInputs);
-console.log(counter);
+// let counter = new Counter(incrementBtns, decrementBtns, quantityInputs);
+// console.log(counter);
+
+
 
